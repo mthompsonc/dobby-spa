@@ -1,0 +1,136 @@
+nav.navbar{
+  background-color: #301F1F;
+  border: none;
+  color: #FFF;
+}
+
+.seccion_uno {
+  background-color: $first_background;
+  padding-bottom: 2em;
+  .cirimg{
+    @include circle();
+    img{
+      border-radius: $circle;
+      top: -7em;
+    }
+  }
+  .description{
+    h4{
+      text-align: $text_center;
+      margin-bottom: $description_margin;
+    }
+    p{
+      margin-left: 1em;
+      margin-right: 1em;
+      font-family: $thinner_font;
+    }
+  }
+  button{
+    @include btn();
+  }
+}
+
+.welcome{
+  background-color: $second_background;
+  padding-top: $description_margin;
+  padding-bottom: $description_margin;
+  font-family: $thinner_font;
+  .imgborder{
+    border-radius: $roundedborder_img;
+  }
+  h3{
+    color: $color_title;
+    text-align: $text_center;
+    font-size: 30px;
+  }
+  .icon{
+    line-height: $line_height;
+    @include icon();
+  }
+  p{
+    line-height: $line_height;
+  }
+  span{
+    line-height: $line_height
+  }
+}
+
+.aboutus{
+  @include aboutus();
+  .right{
+    text-align:$text_right;
+  }
+  .left{
+    text-align:$text_left;
+  }
+  .float-r{
+    float: $float_right;
+    padding: $description_title_margin;
+    border-radius: $roundedborder_img;
+  }
+  .float-l{
+    float: $float_left;
+    padding: $description_title_margin;
+    border-radius: $roundedborder_img;
+  }
+  p{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 13px;
+    line-height: $line_height;
+  }
+}
+
+.line_circle{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  .circle{
+    border-radius: $circle;
+    border:$color_line_circle;
+    width: 10px;
+    height: 10px;
+    display: $inlineblock;
+
+  }
+  .line{
+    width: $line;
+    border: $color_line_circle;
+    display: $inlineblock;
+    margin-bottom:4px;
+  }
+}
+
+.followUs{
+  background-color: $fourth_background;
+  color: $cream_color;
+  .rrss{
+    @include rrss();
+  }
+  h2{
+    font-size: 4em;
+    font-style: italic;
+    font-family: "courier new", serif;
+    padding-bottom: 18px;
+    display: inline;
+  }
+  p{
+    display: $inlineblock;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 13px;
+    line-height: $line_height;
+    text-align: justify;
+  }
+  .subtitle{
+    margin-top: 1em;
+    margin-left: 0.3em;
+    font-weight: 400;
+  }
+  hr{
+    border: 0.4px solid $cream_color;
+  }
+  .last{
+    font-size: 12px;
+  }
+}
+

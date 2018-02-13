@@ -1,0 +1,35 @@
+@mixin circle(){
+  border-radius: $circle;
+  border: $color_img_circle;
+  position: $img_position;
+  bottom: $img_position_bottom;
+}
+
+@mixin btn(){
+  font-size: 11px;
+  background-color: #DCBD8D;
+  border: none;
+}
+
+@mixin icon(){
+  font-size: $icon_size;
+  color: $icon_color;
+  text-align: $text_center;
+}
+
+@mixin aboutus(){
+  background-color: $third_background;
+  color: $cream_color;
+  padding-top: $description_margin;
+  padding-bottom: $description_margin;
+  font-family: $thinner_font;
+}
+
+@mixin rrss(){
+  width: $rrss;
+  height: $rrss;
+  border-radius: $circle;
+  border: $border_rrss;
+  background-color: $rrss_background;
+  margin-right: $margin_right;
+}
